@@ -2,7 +2,7 @@ import Foundation
 
 /// Shared data model for passing track metadata between
 /// the companion app and the WidgetKit extension via App Group UserDefaults.
-struct TrackData: Codable {
+struct TrackData: Codable, Equatable {
     let title: String
     let author: String
     let coverData: Data?

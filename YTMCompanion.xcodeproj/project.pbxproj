@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1944B112AA77180D4060F78A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6865E3A81F755FBB63A7 /* ContentView.swift */; };
 		2053C65D827AB42081A760BB /* TrackData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F30F3B4A2B14BCE25FF913 /* TrackData.swift */; };
+		2F28E38A8554192D64233685 /* PlaybackIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC2E5A69A07631691DFCA93 /* PlaybackIntents.swift */; };
 		3F956B91E74EADEB1DAAD8E4 /* YTMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B6C68F4DA2BC5A33B06998 /* YTMService.swift */; };
 		74FE1565E4AD82C87A68848F /* YTMWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D413AC191A664F680872D1 /* YTMWidget.swift */; };
 		7BF9476940129034C608B998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FF79B541B7172B13322281F /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		B783689D1C1E6356EF462CDD /* TrackStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352849E15046254B1B5F931D /* TrackStore.swift */; };
 		D32C7ED095A14FAA8F750781 /* TrackStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352849E15046254B1B5F931D /* TrackStore.swift */; };
 		DAF2513F8D6E6894DD7945C5 /* YTMCompanionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FA342FA4603C65F6E7BC9E /* YTMCompanionApp.swift */; };
+		DFF639342074AE4F7DDB5887 /* PlaybackIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC2E5A69A07631691DFCA93 /* PlaybackIntents.swift */; };
 		F1539328B58D2871DE929369 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB60BE769A9526430806454 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,7 @@
 		352849E15046254B1B5F931D /* TrackStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackStore.swift; sourceTree = "<group>"; };
 		4FF79B541B7172B13322281F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56B6AED84340EC207CAE120B /* YTMWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTMWidgetBundle.swift; sourceTree = "<group>"; };
+		5DC2E5A69A07631691DFCA93 /* PlaybackIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackIntents.swift; sourceTree = "<group>"; };
 		620F6865E3A81F755FBB63A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		73B6C68F4DA2BC5A33B06998 /* YTMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTMService.swift; sourceTree = "<group>"; };
 		86D413AC191A664F680872D1 /* YTMWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTMWidget.swift; sourceTree = "<group>"; };
@@ -118,6 +121,7 @@
 		942498CCC5C3E51675716550 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				5DC2E5A69A07631691DFCA93 /* PlaybackIntents.swift */,
 				352849E15046254B1B5F931D /* TrackStore.swift */,
 				674F731702D19282792C26CC /* Models */,
 			);
@@ -245,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1944B112AA77180D4060F78A /* ContentView.swift in Sources */,
+				DFF639342074AE4F7DDB5887 /* PlaybackIntents.swift in Sources */,
 				2053C65D827AB42081A760BB /* TrackData.swift in Sources */,
 				B783689D1C1E6356EF462CDD /* TrackStore.swift in Sources */,
 				DAF2513F8D6E6894DD7945C5 /* YTMCompanionApp.swift in Sources */,
@@ -256,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F28E38A8554192D64233685 /* PlaybackIntents.swift in Sources */,
 				A54C4D11B87FC3F739F3A4B0 /* TrackData.swift in Sources */,
 				D32C7ED095A14FAA8F750781 /* TrackStore.swift in Sources */,
 				A67A516C487C42F073D8AE5B /* WidgetEntryView.swift in Sources */,

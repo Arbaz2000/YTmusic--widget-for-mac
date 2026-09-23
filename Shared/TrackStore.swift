@@ -48,4 +48,66 @@ final class TrackStore {
 
         return .placeholder
     }
+
+    // MARK: – Auth Token Persistence
+
+    func saveAuthToken(_ token: String) {
+        userDefaults?.set(token, forKey: "ytm_companion_auth_token")
+        userDefaults?.synchronize()
+
+        // Also write to App Group container file as backup for widget extension
+        if let containerURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: suiteName) {
+            let fileURL = containerURL.appendingPathComponent("authToken.txt")
+            try? token.data(using: .utf8)?.write(to: fileURL)
+        }
+    }
+
+    func loadAuthToken() -> String? {
+        if let token = userDefaults?.string(forKey: "ytm_companion_auth_token"), !token.isEmpty {
+            return token
+        }
+
+        // Try App Group container file backup
+        if let containerURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: suiteName) {
+            let fileURL = containerURL.appendingPathComponent("authToken.txt")
+            if let data = try? Data(contentsOf: fileURL),
+               let token = String(data: data, encoding: .utf8)?.trimmingCharacters(in: .whitespacesAndNewlines),
+               !token.isEmpty {
+                return token
+            }
+        }
+
+        return nil
+    }
+
+    // MARK: – Playback Commands (usable by main app and widget extension)
+
+    func sendPlaybackCommand(_ command: String, explicitToken: String? = nil, completion: ((Bool) -> Void)? = nil) {
+        guard let url = URL(string: "http://localhost:9863/api/v1/command") else {
+            completion?(false)
+            return
+        }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.timeoutInterval = 3.0
+
+        let token = explicitToken ?? loadAuthToken()
+        if let token = token, !token.isEmpty {
+            request.setValue(token, forHTTPHeaderField: "Authorization")
+        }
+
+        let body: [String: Any] = ["command": command]
+        request.httpBody = try? JSONSerialization.data(withJSONObject: body)
+
+        let task = URLSession.shared.dataTask(with: request) { _, response, error in
+            if let http = response as? HTTPURLResponse, (200...299).contains(http.statusCode) {
+                completion?(true)
+            } else {
+                completion?(false)
+            }
+        }
+        task.resume()
+    }
 }
