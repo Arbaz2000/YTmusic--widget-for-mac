@@ -17,7 +17,6 @@ final class YTMService: ObservableObject {
     // MARK: – Private
 
     private var timer: Timer?
-    private let userDefaults = UserDefaults(suiteName: "group.local.ytmcompanion")
     private let apiURL = URL(string: "http://localhost:9863/api/v1/state")!
     private let session: URLSession
 
@@ -129,10 +128,7 @@ final class YTMService: ObservableObject {
             self.currentTrack = trackData
         }
 
-        if let encoded = try? JSONEncoder().encode(trackData) {
-            userDefaults?.set(encoded, forKey: "currentTrack")
-        }
-
+        TrackStore.shared.saveTrack(trackData)
         WidgetCenter.shared.reloadAllTimelines()
     }
 }

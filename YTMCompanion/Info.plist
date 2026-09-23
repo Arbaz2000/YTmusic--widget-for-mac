@@ -13,5 +13,7 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>AppGroupIdentifier</key>
+	<string>$(TeamIdentifierPrefix)group.local.ytmcompanion</string>
 </dict>
 </plist>

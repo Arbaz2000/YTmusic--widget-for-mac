@@ -1,0 +1,26 @@
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+project.xcworkspace/xcuserdata/
+*.xcuserdatad/
+*.xcbkptlist
+*.xcuserstate
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Swift PM / Build
+.build/
+Packages/
+*.pkg
+*.app
+*.appex
+
+# Archives / Downloads
+*.dmg
+*.zip
+*.tar.gz

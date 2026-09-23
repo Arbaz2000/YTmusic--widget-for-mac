@@ -12,10 +12,12 @@
 		3F956B91E74EADEB1DAAD8E4 /* YTMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B6C68F4DA2BC5A33B06998 /* YTMService.swift */; };
 		74FE1565E4AD82C87A68848F /* YTMWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D413AC191A664F680872D1 /* YTMWidget.swift */; };
 		7BF9476940129034C608B998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FF79B541B7172B13322281F /* Assets.xcassets */; };
-		A1C901A7529BEDBC858ECA90 /* YTMWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D720B8A47FC0287430C564A0 /* YTMWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A1C901A7529BEDBC858ECA90 /* YTMWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D720B8A47FC0287430C564A0 /* YTMWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A54C4D11B87FC3F739F3A4B0 /* TrackData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F30F3B4A2B14BCE25FF913 /* TrackData.swift */; };
 		A67A516C487C42F073D8AE5B /* WidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108431666EEBD1AF60E200C6 /* WidgetEntryView.swift */; };
 		A7949975AA9A9E18F137A5E0 /* YTMWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B6AED84340EC207CAE120B /* YTMWidgetBundle.swift */; };
+		B783689D1C1E6356EF462CDD /* TrackStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352849E15046254B1B5F931D /* TrackStore.swift */; };
+		D32C7ED095A14FAA8F750781 /* TrackStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352849E15046254B1B5F931D /* TrackStore.swift */; };
 		DAF2513F8D6E6894DD7945C5 /* YTMCompanionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FA342FA4603C65F6E7BC9E /* YTMCompanionApp.swift */; };
 		F1539328B58D2871DE929369 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB60BE769A9526430806454 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -37,7 +39,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				A1C901A7529BEDBC858ECA90 /* YTMWidget.appex in Embed Foundation Extensions */,
+				A1C901A7529BEDBC858ECA90 /* YTMWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +51,7 @@
 		1C19D13DF8B01ECD70BE919F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1FB60BE769A9526430806454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		261A71785F2CBBDFB9FB35C0 /* YTMCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YTMCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		352849E15046254B1B5F931D /* TrackStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackStore.swift; sourceTree = "<group>"; };
 		4FF79B541B7172B13322281F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56B6AED84340EC207CAE120B /* YTMWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTMWidgetBundle.swift; sourceTree = "<group>"; };
 		620F6865E3A81F755FBB63A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,7 +60,7 @@
 		B8FA342FA4603C65F6E7BC9E /* YTMCompanionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTMCompanionApp.swift; sourceTree = "<group>"; };
 		C4F30F3B4A2B14BCE25FF913 /* TrackData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackData.swift; sourceTree = "<group>"; };
 		CBF6BE38A3A8D4C58323997E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		D720B8A47FC0287430C564A0 /* YTMWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = YTMWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D720B8A47FC0287430C564A0 /* YTMWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = YTMWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -65,7 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				261A71785F2CBBDFB9FB35C0 /* YTMCompanion.app */,
-				D720B8A47FC0287430C564A0 /* YTMWidget.appex */,
+				D720B8A47FC0287430C564A0 /* YTMWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +118,7 @@
 		942498CCC5C3E51675716550 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				352849E15046254B1B5F931D /* TrackStore.swift */,
 				674F731702D19282792C26CC /* Models */,
 			);
 			path = Shared;
@@ -174,7 +178,7 @@
 			packageProductDependencies = (
 			);
 			productName = YTMWidgetExtension;
-			productReference = D720B8A47FC0287430C564A0 /* YTMWidget.appex */;
+			productReference = D720B8A47FC0287430C564A0 /* YTMWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -187,9 +191,11 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					763ACCC333CF1EBC9FF58C3C = {
+						DevelopmentTeam = 33Z2BF7995;
 						ProvisioningStyle = Automatic;
 					};
 					DD2AD8696C10C48E0053D9C7 = {
+						DevelopmentTeam = 33Z2BF7995;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -240,6 +246,7 @@
 			files = (
 				1944B112AA77180D4060F78A /* ContentView.swift in Sources */,
 				2053C65D827AB42081A760BB /* TrackData.swift in Sources */,
+				B783689D1C1E6356EF462CDD /* TrackStore.swift in Sources */,
 				DAF2513F8D6E6894DD7945C5 /* YTMCompanionApp.swift in Sources */,
 				3F956B91E74EADEB1DAAD8E4 /* YTMService.swift in Sources */,
 			);
@@ -250,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A54C4D11B87FC3F739F3A4B0 /* TrackData.swift in Sources */,
+				D32C7ED095A14FAA8F750781 /* TrackStore.swift in Sources */,
 				A67A516C487C42F073D8AE5B /* WidgetEntryView.swift in Sources */,
 				74FE1565E4AD82C87A68848F /* YTMWidget.swift in Sources */,
 				A7949975AA9A9E18F137A5E0 /* YTMWidgetBundle.swift in Sources */,
@@ -302,6 +310,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 33Z2BF7995;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -335,10 +344,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = YTMCompanion/YTMCompanion.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 33Z2BF7995;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YTMCompanion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,14 +363,9 @@
 				CODE_SIGN_ENTITLEMENTS = YTMWidget/YTMWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 33Z2BF7995;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YTMWidget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = local.ytmcompanion.widget;
 				PRODUCT_NAME = YTMWidget;
 				SDKROOT = macosx;
@@ -376,10 +378,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = YTMCompanion/YTMCompanion.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 33Z2BF7995;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YTMCompanion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -397,14 +397,9 @@
 				CODE_SIGN_ENTITLEMENTS = YTMWidget/YTMWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 33Z2BF7995;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YTMWidget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = local.ytmcompanion.widget;
 				PRODUCT_NAME = YTMWidget;
 				SDKROOT = macosx;
@@ -447,6 +442,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 33Z2BF7995;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
