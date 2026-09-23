@@ -1,0 +1,53 @@
+name: YTMCompanion
+options:
+  bundleIdPrefix: local.ytmcompanion
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+
+targets:
+  YTMCompanion:
+    type: application
+    platform: macOS
+    sources:
+      - path: YTMCompanion
+        excludes:
+          - "*.entitlements"
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: local.ytmcompanion
+        INFOPLIST_FILE: YTMCompanion/Info.plist
+        GENERATE_INFOPLIST_FILE: true
+        CODE_SIGN_ENTITLEMENTS: YTMCompanion/YTMCompanion.entitlements
+        CODE_SIGN_STYLE: Automatic
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        COMBINE_HIDPI_IMAGES: true
+    dependencies:
+      - target: YTMWidgetExtension
+        embed: true
+
+  YTMWidgetExtension:
+    type: app-extension
+    platform: macOS
+    sources:
+      - path: YTMWidget
+        excludes:
+          - "*.entitlements"
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: local.ytmcompanion.widget
+        PRODUCT_NAME: YTMWidget
+        INFOPLIST_FILE: YTMWidget/Info.plist
+        GENERATE_INFOPLIST_FILE: true
+        CODE_SIGN_ENTITLEMENTS: YTMWidget/YTMWidget.entitlements
+        CODE_SIGN_STYLE: Automatic
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks"
+        SKIP_INSTALL: true

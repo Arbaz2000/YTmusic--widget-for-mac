@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1944B112AA77180D4060F78A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F6865E3A81F755FBB63A7 /* ContentView.swift */; };
+		2053C65D827AB42081A760BB /* TrackData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F30F3B4A2B14BCE25FF913 /* TrackData.swift */; };
+		3F956B91E74EADEB1DAAD8E4 /* YTMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B6C68F4DA2BC5A33B06998 /* YTMService.swift */; };
+		74FE1565E4AD82C87A68848F /* YTMWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D413AC191A664F680872D1 /* YTMWidget.swift */; };
+		7BF9476940129034C608B998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FF79B541B7172B13322281F /* Assets.xcassets */; };
+		A1C901A7529BEDBC858ECA90 /* YTMWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D720B8A47FC0287430C564A0 /* YTMWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A54C4D11B87FC3F739F3A4B0 /* TrackData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F30F3B4A2B14BCE25FF913 /* TrackData.swift */; };
+		A67A516C487C42F073D8AE5B /* WidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108431666EEBD1AF60E200C6 /* WidgetEntryView.swift */; };
+		A7949975AA9A9E18F137A5E0 /* YTMWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B6AED84340EC207CAE120B /* YTMWidgetBundle.swift */; };
+		DAF2513F8D6E6894DD7945C5 /* YTMCompanionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FA342FA4603C65F6E7BC9E /* YTMCompanionApp.swift */; };
+		F1539328B58D2871DE929369 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB60BE769A9526430806454 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		929102BC73F4589AE086122C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4747219D864AE94DECE31354 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD2AD8696C10C48E0053D9C7;
+			remoteInfo = YTMWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		66BA7B4C0B17A8E4375120AC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A1C901A7529BEDBC858ECA90 /* YTMWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		108431666EEBD1AF60E200C6 /* WidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntryView.swift; sourceTree = "<group>"; };
+		1C19D13DF8B01ECD70BE919F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1FB60BE769A9526430806454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		261A71785F2CBBDFB9FB35C0 /* YTMCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YTMCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FF79B541B7172B13322281F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56B6AED84340EC207CAE120B /* YTMWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTMWidgetBundle.swift; sourceTree = "<group>"; };
+		620F6865E3A81F755FBB63A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		73B6C68F4DA2BC5A33B06998 /* YTMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTMService.swift; sourceTree = "<group>"; };
+		86D413AC191A664F680872D1 /* YTMWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTMWidget.swift; sourceTree = "<group>"; };
+		B8FA342FA4603C65F6E7BC9E /* YTMCompanionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTMCompanionApp.swift; sourceTree = "<group>"; };
+		C4F30F3B4A2B14BCE25FF913 /* TrackData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackData.swift; sourceTree = "<group>"; };
+		CBF6BE38A3A8D4C58323997E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D720B8A47FC0287430C564A0 /* YTMWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = YTMWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0DA71D3A827E7B113E7AC75A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				261A71785F2CBBDFB9FB35C0 /* YTMCompanion.app */,
+				D720B8A47FC0287430C564A0 /* YTMWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		434B82B0A479D27ADCE1DC71 = {
+			isa = PBXGroup;
+			children = (
+				942498CCC5C3E51675716550 /* Shared */,
+				8ED8CF7659469EBB6F736151 /* YTMCompanion */,
+				6D67EDD022E8C22924BC78DE /* YTMWidget */,
+				0DA71D3A827E7B113E7AC75A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		674F731702D19282792C26CC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4F30F3B4A2B14BCE25FF913 /* TrackData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6D67EDD022E8C22924BC78DE /* YTMWidget */ = {
+			isa = PBXGroup;
+			children = (
+				1FB60BE769A9526430806454 /* Assets.xcassets */,
+				CBF6BE38A3A8D4C58323997E /* Info.plist */,
+				86D413AC191A664F680872D1 /* YTMWidget.swift */,
+				56B6AED84340EC207CAE120B /* YTMWidgetBundle.swift */,
+				B6ED5AB8E779848C3DA7D6DD /* Views */,
+			);
+			path = YTMWidget;
+			sourceTree = "<group>";
+		};
+		8ED8CF7659469EBB6F736151 /* YTMCompanion */ = {
+			isa = PBXGroup;
+			children = (
+				4FF79B541B7172B13322281F /* Assets.xcassets */,
+				620F6865E3A81F755FBB63A7 /* ContentView.swift */,
+				1C19D13DF8B01ECD70BE919F /* Info.plist */,
+				B8FA342FA4603C65F6E7BC9E /* YTMCompanionApp.swift */,
+				E9D9D4C9A8AB60E5C493A745 /* Services */,
+			);
+			path = YTMCompanion;
+			sourceTree = "<group>";
+		};
+		942498CCC5C3E51675716550 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				674F731702D19282792C26CC /* Models */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B6ED5AB8E779848C3DA7D6DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				108431666EEBD1AF60E200C6 /* WidgetEntryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E9D9D4C9A8AB60E5C493A745 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				73B6C68F4DA2BC5A33B06998 /* YTMService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		763ACCC333CF1EBC9FF58C3C /* YTMCompanion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A8779DD8777A824AAD735F8 /* Build configuration list for PBXNativeTarget "YTMCompanion" */;
+			buildPhases = (
+				150A251DB493494C81804733 /* Sources */,
+				93E59899D382FF718FBA45A5 /* Resources */,
+				66BA7B4C0B17A8E4375120AC /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74F24F6B57336D1CD182564B /* PBXTargetDependency */,
+			);
+			name = YTMCompanion;
+			packageProductDependencies = (
+			);
+			productName = YTMCompanion;
+			productReference = 261A71785F2CBBDFB9FB35C0 /* YTMCompanion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD2AD8696C10C48E0053D9C7 /* YTMWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5217D4B75D2CCF0DE54BAF6C /* Build configuration list for PBXNativeTarget "YTMWidgetExtension" */;
+			buildPhases = (
+				D358DE80AA0643054722419F /* Sources */,
+				565EBBBA6EEA25949E26AB5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YTMWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = YTMWidgetExtension;
+			productReference = D720B8A47FC0287430C564A0 /* YTMWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4747219D864AE94DECE31354 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					763ACCC333CF1EBC9FF58C3C = {
+						ProvisioningStyle = Automatic;
+					};
+					DD2AD8696C10C48E0053D9C7 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DB14F3F25B10FF3F72823858 /* Build configuration list for PBXProject "YTMCompanion" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 434B82B0A479D27ADCE1DC71;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0DA71D3A827E7B113E7AC75A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				763ACCC333CF1EBC9FF58C3C /* YTMCompanion */,
+				DD2AD8696C10C48E0053D9C7 /* YTMWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		565EBBBA6EEA25949E26AB5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1539328B58D2871DE929369 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E59899D382FF718FBA45A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BF9476940129034C608B998 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		150A251DB493494C81804733 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1944B112AA77180D4060F78A /* ContentView.swift in Sources */,
+				2053C65D827AB42081A760BB /* TrackData.swift in Sources */,
+				DAF2513F8D6E6894DD7945C5 /* YTMCompanionApp.swift in Sources */,
+				3F956B91E74EADEB1DAAD8E4 /* YTMService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D358DE80AA0643054722419F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54C4D11B87FC3F739F3A4B0 /* TrackData.swift in Sources */,
+				A67A516C487C42F073D8AE5B /* WidgetEntryView.swift in Sources */,
+				74FE1565E4AD82C87A68848F /* YTMWidget.swift in Sources */,
+				A7949975AA9A9E18F137A5E0 /* YTMWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74F24F6B57336D1CD182564B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD2AD8696C10C48E0053D9C7 /* YTMWidgetExtension */;
+			targetProxy = 929102BC73F4589AE086122C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03411CB446E3054F177C5C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		2BCF4C1E7046133A48A2CAE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YTMCompanion/YTMCompanion.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 33Z2BF7995;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YTMCompanion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.ytmcompanion;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		45353B837682554B666780A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = YTMWidget/YTMWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 33Z2BF7995;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YTMWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.ytmcompanion.widget;
+				PRODUCT_NAME = YTMWidget;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4CDA52AC5F1F33FEACE5ADE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YTMCompanion/YTMCompanion.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 33Z2BF7995;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YTMCompanion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.ytmcompanion;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		926243DB1BCC50F16C140CDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = YTMWidget/YTMWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 33Z2BF7995;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YTMWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.ytmcompanion.widget;
+				PRODUCT_NAME = YTMWidget;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A74887101904BA16E717FF9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5217D4B75D2CCF0DE54BAF6C /* Build configuration list for PBXNativeTarget "YTMWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				926243DB1BCC50F16C140CDC /* Debug */,
+				45353B837682554B666780A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7A8779DD8777A824AAD735F8 /* Build configuration list for PBXNativeTarget "YTMCompanion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CDA52AC5F1F33FEACE5ADE9 /* Debug */,
+				2BCF4C1E7046133A48A2CAE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DB14F3F25B10FF3F72823858 /* Build configuration list for PBXProject "YTMCompanion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03411CB446E3054F177C5C4D /* Debug */,
+				A74887101904BA16E717FF9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4747219D864AE94DECE31354 /* Project object */;
+}
